@@ -35,6 +35,7 @@ namespace WebApp.Pages.Ticket
             {
                 return NotFound();
             }
+            
             Ticket = ticket;
             return Page();
         }
@@ -48,7 +49,27 @@ namespace WebApp.Pages.Ticket
                 return Page();
             }
 
-            _context.Attach(Ticket).State = EntityState.Modified;
+            var existingTicket = await _context.Tickets.FirstOrDefaultAsync(m => m.Id == Ticket.Id);
+            if (existingTicket == null)
+            {
+                return NotFound();
+            }
+
+            // Retain the original CreatedAtDt value
+            var originalCreatedAt = existingTicket.CreatedAtDt;
+
+            // Update the properties that can change
+            existingTicket.Name = Ticket.Name;
+            existingTicket.Description = Ticket.Description;
+            existingTicket.FinishedBy = Ticket.FinishedBy;
+            existingTicket.IsDone = Ticket.IsDone;
+
+            // Restore the original CreatedAtDt value
+            existingTicket.CreatedAtDt = originalCreatedAt;
+            existingTicket.UpdatedAt = DateTime.Now;
+
+            // Mark the ticket as modified
+            _context.Entry(existingTicket).State = EntityState.Modified;
 
             try
             {

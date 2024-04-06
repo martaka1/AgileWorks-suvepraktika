@@ -34,7 +34,7 @@ namespace WebApp.Pages.Ticket
             {
                 return Page();
             }
-            
+            Ticket.CreatedAtDt=DateTime.Now;
 
             _context.Tickets.Add(Ticket);
             await _context.SaveChangesAsync();
