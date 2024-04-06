@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2emYX070mvMbJnwfa+9VkIVOfBVV19f/iNkz9MbAr63B0pKNAWneVfUMsm9/NO8afjRGtEFwPiXZGef0gLeMhg==",
+  "dgSpecHash": "v2JQwhOApOamN3ozsY2LHO+CJ/RuVtNgUageGwkQqljhSob4lPusc+wYNu98fs2KtZEGoBeQzZQoVEWUXCI5qA==",
   "success": true,
-  "projectFilePath": "/Users/martakask/Downloads/Exam/WebApp/WebApp.csproj",
+  "projectFilePath": "/Users/martakask/RiderProjects/AgileWorks-suvepraktika/WebApp/WebApp.csproj",
   "expectedPackageFiles": [
     "/Users/martakask/.nuget/packages/azure.core/1.25.0/azure.core.1.25.0.nupkg.sha512",
     "/Users/martakask/.nuget/packages/azure.identity/1.7.0/azure.identity.1.7.0.nupkg.sha512",

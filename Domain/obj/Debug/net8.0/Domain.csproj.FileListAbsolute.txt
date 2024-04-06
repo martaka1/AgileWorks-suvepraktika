@@ -31,3 +31,15 @@
 /Users/martakask/Downloads/Exam/Domain/obj/Debug/net8.0/refint/Domain.dll
 /Users/martakask/Downloads/Exam/Domain/obj/Debug/net8.0/Domain.pdb
 /Users/martakask/Downloads/Exam/Domain/obj/Debug/net8.0/ref/Domain.dll
+/Users/martakask/RiderProjects/AgileWorks-suvepraktika/Domain/bin/Debug/net8.0/Domain.deps.json
+/Users/martakask/RiderProjects/AgileWorks-suvepraktika/Domain/bin/Debug/net8.0/Domain.dll
+/Users/martakask/RiderProjects/AgileWorks-suvepraktika/Domain/bin/Debug/net8.0/Domain.pdb
+/Users/martakask/RiderProjects/AgileWorks-suvepraktika/Domain/obj/Debug/net8.0/Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/martakask/RiderProjects/AgileWorks-suvepraktika/Domain/obj/Debug/net8.0/Domain.AssemblyInfoInputs.cache
+/Users/martakask/RiderProjects/AgileWorks-suvepraktika/Domain/obj/Debug/net8.0/Domain.AssemblyInfo.cs
+/Users/martakask/RiderProjects/AgileWorks-suvepraktika/Domain/obj/Debug/net8.0/Domain.csproj.CoreCompileInputs.cache
+/Users/martakask/RiderProjects/AgileWorks-suvepraktika/Domain/obj/Debug/net8.0/Domain.sourcelink.json
+/Users/martakask/RiderProjects/AgileWorks-suvepraktika/Domain/obj/Debug/net8.0/Domain.dll
+/Users/martakask/RiderProjects/AgileWorks-suvepraktika/Domain/obj/Debug/net8.0/refint/Domain.dll
+/Users/martakask/RiderProjects/AgileWorks-suvepraktika/Domain/obj/Debug/net8.0/Domain.pdb
+/Users/martakask/RiderProjects/AgileWorks-suvepraktika/Domain/obj/Debug/net8.0/ref/Domain.dll

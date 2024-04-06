@@ -34,6 +34,7 @@ namespace WebApp.Pages.Ticket
             {
                 return Page();
             }
+            
 
             _context.Tickets.Add(Ticket);
             await _context.SaveChangesAsync();

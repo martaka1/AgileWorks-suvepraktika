@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/martakask/Downloads/Exam/DAL/DAL.csproj": {}
+    "/Users/martakask/RiderProjects/AgileWorks-suvepraktika/DAL/DAL.csproj": {}
   },
   "projects": {
-    "/Users/martakask/Downloads/Exam/DAL/DAL.csproj": {
+    "/Users/martakask/RiderProjects/AgileWorks-suvepraktika/DAL/DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/martakask/Downloads/Exam/DAL/DAL.csproj",
+        "projectUniqueName": "/Users/martakask/RiderProjects/AgileWorks-suvepraktika/DAL/DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "/Users/martakask/Downloads/Exam/DAL/DAL.csproj",
+        "projectPath": "/Users/martakask/RiderProjects/AgileWorks-suvepraktika/DAL/DAL.csproj",
         "packagesPath": "/Users/martakask/.nuget/packages/",
-        "outputPath": "/Users/martakask/Downloads/Exam/DAL/obj/",
+        "outputPath": "/Users/martakask/RiderProjects/AgileWorks-suvepraktika/DAL/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/martakask/.nuget/NuGet/NuGet.Config"
@@ -26,8 +26,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/martakask/Downloads/Exam/Domain/Domain.csproj": {
-                "projectPath": "/Users/martakask/Downloads/Exam/Domain/Domain.csproj"
+              "/Users/martakask/RiderProjects/AgileWorks-suvepraktika/Domain/Domain.csproj": {
+                "projectPath": "/Users/martakask/RiderProjects/AgileWorks-suvepraktika/Domain/Domain.csproj"
               }
             }
           }
@@ -92,14 +92,14 @@
         }
       }
     },
-    "/Users/martakask/Downloads/Exam/Domain/Domain.csproj": {
+    "/Users/martakask/RiderProjects/AgileWorks-suvepraktika/Domain/Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/martakask/Downloads/Exam/Domain/Domain.csproj",
+        "projectUniqueName": "/Users/martakask/RiderProjects/AgileWorks-suvepraktika/Domain/Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "/Users/martakask/Downloads/Exam/Domain/Domain.csproj",
+        "projectPath": "/Users/martakask/RiderProjects/AgileWorks-suvepraktika/Domain/Domain.csproj",
         "packagesPath": "/Users/martakask/.nuget/packages/",
-        "outputPath": "/Users/martakask/Downloads/Exam/Domain/obj/",
+        "outputPath": "/Users/martakask/RiderProjects/AgileWorks-suvepraktika/Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/martakask/.nuget/NuGet/NuGet.Config"

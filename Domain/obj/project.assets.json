@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/martakask/Downloads/Exam/Domain/Domain.csproj",
+      "projectUniqueName": "/Users/martakask/RiderProjects/AgileWorks-suvepraktika/Domain/Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "/Users/martakask/Downloads/Exam/Domain/Domain.csproj",
+      "projectPath": "/Users/martakask/RiderProjects/AgileWorks-suvepraktika/Domain/Domain.csproj",
       "packagesPath": "/Users/martakask/.nuget/packages/",
-      "outputPath": "/Users/martakask/Downloads/Exam/Domain/obj/",
+      "outputPath": "/Users/martakask/RiderProjects/AgileWorks-suvepraktika/Domain/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/martakask/.nuget/NuGet/NuGet.Config"
