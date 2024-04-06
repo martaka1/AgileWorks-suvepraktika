@@ -50,14 +50,25 @@ namespace WebApp.Pages.Ticket
             }
 
             var ticket = await _context.Tickets.FindAsync(id);
+            var finished = false;
             if (ticket != null)
             {
                 Ticket = ticket;
+                finished = ticket.IsDone;
                 _context.Tickets.Remove(Ticket);
                 await _context.SaveChangesAsync();
             }
 
-            return RedirectToPage("./Index");
+            if (finished)
+            {
+                return RedirectToPage("./FinishedTickets"); 
+            }
+            else
+            {
+                return RedirectToPage("./Index");
+            }
+
+            
         }
     }
 }

@@ -52,7 +52,7 @@
             Is the ticket done?
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Ticket.IsDone)
+            @(Model.Ticket.IsDone ? "Yes" : "No")
         </dd>
         <dt class="col-sm-2">
             Remaining Time

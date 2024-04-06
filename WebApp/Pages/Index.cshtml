@@ -5,12 +5,21 @@
 }
 <head>
     <title>Customer Service Portal</title>
-    <link rel="stylesheet" href="~/css/style.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
 </head>
 
 <div class="text-center">
     <h1>Customer Service Portal</h1>
-    <form method="get" asp-page="/Ticket/Create">
+    <br/>
+    <div>
+        <form method="get" asp-page="/Ticket/Create">
             <button type="submit" class="pretty-button">Create new ticket</button>
         </form>
+    </div>
+    <br/>
+    <div>
+        <form method="get" asp-page="/Ticket/Index">
+            <button type="submit" class="pretty-button">Ticket List</button>
+        </form>
+    </div>
 </div>
