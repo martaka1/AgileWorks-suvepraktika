@@ -4,11 +4,10 @@
 @{
     ViewData["Title"] = "Index";
 }
-<style>
-    .urgent {
-        color: red;
-    }
-</style>
+<head>
+    <title>Active Tickets</title>
+    <link rel="stylesheet" href="~/css/style.css" />
+</head>
 
 <h1>Active tickets</h1>
 
@@ -62,7 +61,7 @@
                 <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
                 <form method="post" asp-page-handler="MarkAsDone">
                     <input type="hidden" name="id" value="@item.Id" />
-                    <button type="submit">Mark as Done</button>
+                    <button type="submit" class="pretty-button">Mark as Done</button>
                 </form>
             </td>
         </tr>

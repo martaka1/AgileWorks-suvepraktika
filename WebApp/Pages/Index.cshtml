@@ -3,10 +3,14 @@
 @{
     ViewData["Title"] = "Home page";
 }
+<head>
+    <title>Customer Service Portal</title>
+    <link rel="stylesheet" href="~/css/style.css" />
+</head>
 
 <div class="text-center">
     <h1>Customer Service Portal</h1>
-    <button >
-        <a asp-page="/Ticket/Create">Create new ticket</a>
-    </button>
+    <form method="get" asp-page="/Ticket/Create">
+            <button type="submit" class="pretty-button">Create new ticket</button>
+        </form>
 </div>
