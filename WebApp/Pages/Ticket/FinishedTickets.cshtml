@@ -1,0 +1,66 @@
+@page
+@model WebApp.Pages.Ticket.FinishedTickets
+
+@{
+    ViewData["Title"] = "Index";
+}
+<head>
+    <title>Active Tickets</title>
+    <link rel="stylesheet" href="~/css/style.css" />
+</head>
+
+<h1>Finished tickets</h1>
+
+<p>
+    <a asp-page="Create">Create New Ticket</a> | <a asp-page="Index">Active Tickets</a> 
+</p>
+<table class="table">
+    <thead>
+    <tr>
+        <th>
+            Created at
+        </th>
+            
+        <th>
+            Ticket name
+        </th>
+        <th>
+            Ticket description
+        </th>
+        <th>
+            Finishing time
+        </th>
+           
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model.Ticket) {
+        if (item.IsDone)
+        {
+            var shortDescription = item.Description.Length > 50 ? item.Description.Substring(0, 50) + "..." : item.Description;
+            <tr >
+                <td>
+                    @Html.DisplayFor(modelItem => item.CreatedAtDt)
+                </td>
+            
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @shortDescription
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UpdatedAt)
+                </td>
+            
+                <td>
+                    <a asp-page="./DetailsFinished" asp-route-id="@item.Id">Details</a> |
+                    <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+        
+    }
+    </tbody>
+</table>

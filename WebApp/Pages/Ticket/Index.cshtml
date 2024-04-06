@@ -12,7 +12,7 @@
 <h1>Active tickets</h1>
 
 <p>
-    <a asp-page="Create">Create New</a>
+    <a asp-page="Create">Create New Ticket</a> | <a asp-page="FinishedTickets">Finished Tickets</a> 
 </p>
 <table class="table">
     <thead>
@@ -59,6 +59,7 @@
             <td>
                 <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
                 <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
                 <form method="post" asp-page-handler="MarkAsDone">
                     <input type="hidden" name="id" value="@item.Id" />
                     <button type="submit" class="pretty-button">Mark as Done</button>

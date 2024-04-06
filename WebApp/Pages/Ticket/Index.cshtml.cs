@@ -23,7 +23,9 @@ namespace WebApp.Pages.Ticket
 
         public async Task OnGetAsync()
         {
-            Ticket = await _context.Tickets.ToListAsync();
+            Ticket = await _context.Tickets
+                .OrderByDescending(t => t.FinishedBy) 
+                .ToListAsync();
         }
         public async Task<IActionResult> OnPostMarkAsDone(Guid id)
         {
@@ -34,6 +36,7 @@ namespace WebApp.Pages.Ticket
             }
 
             ticket.IsDone = true;
+            ticket.UpdatedAt = DateTime.Now;
             await _context.SaveChangesAsync();
 
             return RedirectToPage("./Index");
