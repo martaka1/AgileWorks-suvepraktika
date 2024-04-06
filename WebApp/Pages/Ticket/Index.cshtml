@@ -19,17 +19,17 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Ticket[0].CreatedAtDt)
+                Created at
             </th>
             
             <th>
-                @Html.DisplayNameFor(model => model.Ticket[0].Name)
+                Ticket name
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Ticket[0].Description)
+                Ticket description
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Ticket[0].FinishedBy)
+                Finishing time
             </th>
            
             <th></th>
@@ -59,7 +59,11 @@
             
             <td>
                 <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.Id">Details</a>
+                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                <form method="post" asp-page-handler="MarkAsDone">
+                    <input type="hidden" name="id" value="@item.Id" />
+                    <button type="submit">Mark as Done</button>
+                </form>
             </td>
         </tr>
     }

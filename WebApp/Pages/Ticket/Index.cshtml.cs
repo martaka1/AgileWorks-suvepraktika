@@ -25,5 +25,18 @@ namespace WebApp.Pages.Ticket
         {
             Ticket = await _context.Tickets.ToListAsync();
         }
+        public async Task<IActionResult> OnPostMarkAsDone(Guid id)
+        {
+            var ticket = await _context.Tickets.FindAsync(id);
+            if (ticket == null)
+            {
+                return NotFound();
+            }
+
+            ticket.IsDone = true;
+            await _context.SaveChangesAsync();
+
+            return RedirectToPage("./Index");
+        }
     }
 }
